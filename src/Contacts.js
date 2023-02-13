@@ -1,7 +1,16 @@
+import Map from "./Navigation"
+import ContactsForm from "./components/ContactForm";
+
+
+
 function Contacts() {
-    return (
-        <h1>Our contacts</h1>
-    )
+  return (
+    <div>
+      <h1>Our contacts</h1>
+      <ContactsForm/>
+      <Map />
+    </div>
+  );
 }
 
-export default Contacts
+export default Contacts;

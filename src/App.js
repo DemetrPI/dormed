@@ -16,11 +16,14 @@ import { faPhone, faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <>
+ 
+    <div>
   
-      <Navbar bg="success" variant="dark" sticky="top">
+      <Navbar collapseOnSelect expand = "sm" bg="success" variant="dark" sticky="top">
         <Container>
-          <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" data-bs-target = "navbarScroll"/>
+            <Navbar.Collapse id = "navbarScroll">
+          <Navbar.Brand href="/"><FontAwesomeIcon icon={faHome} /></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/programs">Programs</Nav.Link>
             <Nav.Link href="/booking">Booking</Nav.Link>
@@ -28,6 +31,7 @@ function App() {
             <Nav.Link href="/contacts">Contacts</Nav.Link>
           </Nav>
             <Regulamin/>
+            </Navbar.Collapse>
         </Container>
       </Navbar>
      <Navbar bg="success" variant="light" fixed="bottom" className="ps-3">
@@ -47,7 +51,8 @@ function App() {
          <Route path="/about" element={<About />}></Route>
          <Route path="/contacts" element={<Contacts />}></Route>
        </Routes> 
-    </>
+    </div>
+ 
   );
 }
 
