@@ -6,7 +6,7 @@ const containerStyle = {
   height: '75vh',
   border: "1px solid green",
   position:"relative",
-  left: "10%",
+  marginTop:"5rem",
   borderRadius: "20px",
 };
 
